@@ -1,0 +1,27 @@
+/* Custom styles that extend Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Override Tailwind styles (if needed) */
+.btn-primary {
+  @apply px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  transition: all 0.3s ease;
+}
